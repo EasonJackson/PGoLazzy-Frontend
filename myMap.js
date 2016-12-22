@@ -40,8 +40,6 @@ function query_pokemon_data() {
         });
 }
 
-query_pokemon_data();
-
 function get_count_down_from_timestamp(expire) {
     var now_time = new Date().getTime() / 1000;
     var time_left = expire - now_time;
@@ -55,6 +53,7 @@ function loadMapScenario() {
         credentials: 'AheCiOGSkSuZ-AsuNQoqbbG55QAS74h9R1Oj6pzsWiZBQZifdk7fKX5LaIv3wI07'
     });
     map_manager.map = map;  
+    query_pokemon_data();
     window.setInterval(refresh_pokemon, 1000);
 }
 
