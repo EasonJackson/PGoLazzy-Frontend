@@ -16,6 +16,7 @@ map_manager.map_items = [
         "longitude"  : -73.46,
         "latitude"   : 40.74,
     },
+]
 
 function loadMapScenario() {
     var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
