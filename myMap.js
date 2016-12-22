@@ -18,7 +18,7 @@ map_manager.map_items = [
     },
 ]
 
-function get_countdown_from_timestamp(expire) {
+function get_count_down_from_timestamp(expire) {
     var now_time = new Date().getTime() / 1000;
     var time_left = expire - now_time;
     var second = Math.floor(time_left % 60);
