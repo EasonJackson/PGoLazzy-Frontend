@@ -31,7 +31,7 @@ function loadMapScenario() {
         credentials: 'AheCiOGSkSuZ-AsuNQoqbbG55QAS74h9R1Oj6pzsWiZBQZifdk7fKX5LaIv3wI07'
     });
     map_manager.map = map;  
-    window.setInterval(refresh_pokemon(), 1000);
+    window.setInterval(refresh_pokemon(), 2000);
 }
 
 function refresh_pokemon() {
