@@ -24,7 +24,7 @@ function loadMapScenario() {
     
     for (var i in map_manager.map_items) {
         var map_item = map_manager.map_items[i];
-        var pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(latitude:map_item["latitude"], longitude:map_item["longitude"]), 
+        var pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(map_item["latitude"], map_item["longitude"]), 
                                                  { icon: 'https://github.com/EasonJackson/Pgo_map/raw/master/'+map_item["pokemon_id"]+'.png'});
         map.entities.push(pushpin);
     }
