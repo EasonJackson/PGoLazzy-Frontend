@@ -48,7 +48,7 @@ function refresh_pokemon() {
         pushpins.push(pushpin);
     }
     
-    layer.add(pushipin);
+    layer.add(pushpins);
     
     // 2. Remove old pushpins
     map.layers.clear();
