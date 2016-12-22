@@ -15,7 +15,7 @@ map_manager.map_items = [
         "expire"     : 1482449688,
         "longitude"  : -73.46,
         "latitude"   : 40.74,
-    },
+    }
 ]
 
 function get_count_down_from_timestamp(expire) {
@@ -31,7 +31,7 @@ function loadMapScenario() {
         credentials: 'AheCiOGSkSuZ-AsuNQoqbbG55QAS74h9R1Oj6pzsWiZBQZifdk7fKX5LaIv3wI07'
     });
     map_manager.map = map;  
-    window.setInterval(refresh_pokemon(), 2000);
+    window.setInterval(refresh_pokemon, 1000);
 }
 
 function refresh_pokemon() {
