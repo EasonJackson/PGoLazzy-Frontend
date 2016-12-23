@@ -35,7 +35,9 @@ function query_pokemon_data() {
         .then(function(result){
             //This is where you would put a success callback
             map_manager.map_items = result.data;
-            console.log(result.data);
+            for (var i in map_manager.map_items) {
+                console.log(map_items[i]["latitude"]);
+            }
         }).catch( function(result){
             //This is where you would put an error callback
             console.log(result);
