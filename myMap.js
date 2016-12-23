@@ -8,12 +8,7 @@ var map_manager = {
 function query_pokemon_data() {
     var bounds = map_manager.map.getBounds();
     
-    var apigClient = apigClientFactory.newClient({
-        accessKey: 'AKIAIORJR45X7XNTSBRQ',
-        secretKey: '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',
-        sessionToken: '', //OPTIONAL: If you are using temporary credentials you must include the session token
-        region: 'us-west-2' // OPTIONAL: The region where the API is deployed, by default this parameter is set to us-east-1
-    });
+    var apigClient = apigClientFactory.newClient();
 
     var params = {
         //This is where any header, path, or querystring request params go. The key is the parameter named as defined in the API
