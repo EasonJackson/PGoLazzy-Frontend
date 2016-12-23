@@ -22,7 +22,7 @@ function query_pokemon_data() {
         .then(function(result){
             //This is where you would put a success callback
             map_manager.map_items = result.data;
-        
+            console.log(result.data);
            /* map_manager.map_items = [
                 {
                     "pokemon_id" : 12,
