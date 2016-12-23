@@ -23,21 +23,7 @@ function query_pokemon_data() {
             //This is where you would put a success callback
             map_manager.map_items = result.data;
             console.log(result.data);
-           /* map_manager.map_items = [
-                {
-                    "pokemon_id" : 12,
-                    "expire"     : 1482449688,
-                    "longitude"  : -73.45,
-                    "latitude"   : 40.75,
-                },
-                {
-                    "pokemon_id" : 11,
-                    "expire"     : 1482449688,
-                    "longitude"  : -73.46,
-                    "latitude"   : 40.74,
-                }
-            ]*/   
-            
+           
         }).catch( function(result){
             //This is where you would put an error callback
             console.log(result);
